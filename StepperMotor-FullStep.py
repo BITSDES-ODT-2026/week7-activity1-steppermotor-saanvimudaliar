@@ -1,1 +1,46 @@
+from machine import Pin
+import time
 
+in1 = Pin(13, Pin.OUT)
+in2 = Pin(14, Pin.OUT)
+in3 = Pin(26, Pin.OUT)
+in4 = Pin(33, Pin.OUT)
+
+#list = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
+
+while True:
+    in1.on()
+    time.sleep(0.1)
+    in2.on()
+    time.sleep(0.1)
+    in3.off()
+    time.sleep(0.1)
+    in4.off()
+    time.sleep(0.1)
+    
+    in1.off()
+    time.sleep(0.1)
+    in2.on()
+    time.sleep(0.1)
+    in3.on()
+    time.sleep(0.1)
+    in4.off()
+    time.sleep(0.1)
+    
+    in1.off()
+    time.sleep(0.1)
+    in2.off()
+    time.sleep(0.1)
+    in3.on()
+    time.sleep(0.1)
+    in4.on()
+    time.sleep(0.1)
+    
+    in1.on()
+    time.sleep(0.1)
+    in2.off()
+    time.sleep(0.1)
+    in3.off()
+    time.sleep(0.1)
+    in4.on()
+    time.sleep(0.1)
